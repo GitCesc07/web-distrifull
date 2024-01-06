@@ -1,7 +1,8 @@
 import { Roboto_Condensed } from "next/font/google"
-import Image from "next/image"
 import Layout from "../components/layout"
-import Footer from "@/components/footer"
+import Clientes from "@/components/clientes"
+import FooterClientes from "@/components/footerClientes"
+import BotonesFlotante from "@/components/botonesflotantes"
 import styles from "../styles/sections.module.css"
 
 
@@ -27,35 +28,10 @@ function NuestrosClientes() {
       </Layout>
       <div className={robotoNormal.className}>
         <h2 className={`${styles.title_section} ${robotoBold.className}`}>Nuestros Clientes</h2>
-        <div className={styles.flex_clientes}>
-          <div className={styles.card_logo}>
-            <Image
-              src="/img/vision-mundial.jpg"
-              width={380}
-              height={130}
-              alt="Visión Mundial"
-            />
-          </div>
-          <div className={styles.card_logo}>
-            <Image
-              src="/img/organizacion-panamericana.png"
-              width={380}
-              height={130}
-              alt="Organización Panamericana"
-            />
-          </div>
-          <div className={styles.card_logo}>
-            <Image
-              src="/img/fiat-panis.png"
-              width={380}
-              height={130}
-              alt="Fiat Panis"
-            />
-          </div>
-        </div>
       </div>
-
-      <Footer />
+      <Clientes />
+      <FooterClientes />
+      <BotonesFlotante />
     </>
   )
 }
