@@ -1,6 +1,5 @@
 import { Roboto_Condensed } from "next/font/google"
 import Layout from "../components/layout"
-import Clientes from "@/components/clientes"
 import Footer from "@/components/footer"
 import BotonesFlotante from "@/components/botonesflotantes"
 import styles from "../styles/sections.module.css"
