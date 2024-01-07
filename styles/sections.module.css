@@ -447,3 +447,73 @@
         margin-bottom: 0;
     }
 }
+
+/* * Catalogos */
+.catalog_flex {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    align-items: center;
+    justify-items: center;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) { 
+     .catalog_flex {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 6rem;
+     }
+}
+
+@media (min-width: 1200px) { 
+    .catalog_flex {
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0 6rem;
+        }
+}
+
+.card_catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--colorWhite);    
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    max-width: 343px;
+
+    transition-property: -webkit-transform;
+    transition-property: trasnform;
+    transition-property: trasnform, -webkit-transform;
+    transition: .5s ease-in-out;
+}
+
+.card_catalog:hover {
+    -webkit-transform: rotate(-4deg) scale(1.1);
+    transform: rotate(-4deg) scale(1.1);
+}
+.titlecatalogo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.buttonDownload {
+    width: 100%;
+    background-color: var(--colorGreen);
+    border: none;
+    padding: .5rem 0;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.btn_info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-decoration: none;
+    color: var(--colorWhite);
+    font-size: 1.8rem;
+}
